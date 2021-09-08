@@ -44,18 +44,14 @@ To do that, first fix a value of
 then run the first and second sections with different value of `sample_size_ratio`, as explained there.
 To directly check the computation time with our tuned values of `sample_size_ratio`, run the third section of `CompareWithSAA.m` to record the time and run the fourth section to plot.
 Note that different computer configuration may require different time, but the comparison should be similar.
-* 
-* 
-* The script `EsophagealCancerSim.m` is the implementation of a discrete-time Markov chain model that simulates the progression of Barrett’s esophagus (BE) to esophageal
-adenocarcinoma (EAC), which was developed by Hur et al. (2004) and Choi et al. (2014). See more details [here](https://simopt.github.io/ECSim).
 
-* The script `BruteForceSim.m` runs the simulation model for 10^6 replications on a grid of points to approximate the true response surfaces, whose results are saved in `QALY_true.mat`.
-
-* To select personalized treatment regimen with Procedure TS+ and compare the performance with traditional approach, run script `PersonalizedTreatment.m`, which
-is self-explanatory.
+* For the **Estimated sampling variance** part, get into folder `\Addtional\EstimateVar` and open scripts `IKG_EstimateVar.m` and `noise_var.m`.
+To consider the sampling variance (1) that is constant and sampling variance (2) that is varying, respectively,
+just comment and uncomment the corresponding parts in `noise_var.m`, then run `IKG_EstimateVar.m` to see the comparison for
+<img src="https://latex.codecogs.com/svg.latex?{d=1}">
+and
+<img src="https://latex.codecogs.com/svg.latex?{d=3}">.
 
 ## References
-* Choi, Sung Eun, Katherine E. Perzan, Angela C. Tramontano, Chung Yin Kong, and Chin Hur (2014). Statins and aspirin for chemoprevention in Barrett’s esophagus: Results
-of a cost-effectiveness analysis. *Cancer Prevention Research* **7**(3), 341–350.
-
-* Hur, Chin, Norman S. Nishioka, and G. Scott Gazelle (2004). Cost-effectiveness of aspirin chemoprevention for Barrett’s esophagus. *Journal of the National Cancer Institute* **96**(4), 316–325.
+* Botev, Zdravko (2020). Truncated Normal Generator. *MATLAB Central File Exchange*.
+Retrieved June 29, 2020. https://www.mathworks.com/matlabcentral/fileexchange/53180-truncated-normal-generator
