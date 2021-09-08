@@ -10,10 +10,11 @@ WARNING: These codes are written only for the purpose of demonstration and verif
 clarity, generality, and efficiency has not been well considered.
 
 ## 1 Introduction
-The `\IKG2021` package contains the MATLAB implementations of the numerical experiments in Ding et al. (2021).
-* `\NumericalExperiments`, contains codes for numerical experiments in Shen et al. (2020, §6, EC.6).
-* `\RobustnessTest`, contains codes of the robustness test to linearity assumptions in Shen et al. (2020, §7.2).
-* `\EsophagealCancer`, contains codes of the case study of personalized treatment for cancer prevention in Shen et al. (2020, §8).
+The `\IKG2021` folder contains the MATLAB implementations of the numerical experiments in Ding et al. (2021).
+* `\IKG2021\Main`, contains codes for numerical experiments in Ding et al. (2021, §5.1).
+The codes for the other compared polices are included in the folder `\IKG2021\Main\OtherPolicy`.
+* The function `\IKG2021\Main\trandn.m` is a third-party function from Botev (2020).
+* `\IKG2021\Addtional`, contains codes for numerical experiments in Ding et al. (2021, Appendix I).
 
 ## 2 Installation
 The codes were written and run in MATLAB R2018b, on Windows 7 Enterprise 64-bit OS,
