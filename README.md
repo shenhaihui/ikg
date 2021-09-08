@@ -10,8 +10,7 @@ WARNING: These codes are written only for the purpose of demonstration and verif
 clarity, generality, and efficiency has not been well considered.
 
 ## 1 Introduction
-The `\R&S-C2020` folder contains the entire MATLAB implementations of all the numerical experiments and case study in Shen et al. (2020). The codes are split into the following
-three folders.
+The `\IKG2021` package contains the MATLAB implementations of the numerical experiments in Ding et al. (2021).
 * `\NumericalExperiments`, contains codes for numerical experiments in Shen et al. (2020, §6, EC.6).
 * `\RobustnessTest`, contains codes of the robustness test to linearity assumptions in Shen et al. (2020, §7.2).
 * `\EsophagealCancer`, contains codes of the case study of personalized treatment for cancer prevention in Shen et al. (2020, §8).
