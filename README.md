@@ -47,10 +47,7 @@ Note that different computer configuration may require different time, but the c
 
 * For the **Estimated sampling variance** part, get into folder `\Addtional\EstimateVar` and open scripts `IKG_EstimateVar.m` and `noise_var.m`.
 To consider the sampling variance (1) that is constant and sampling variance (2) that is varying, respectively,
-just comment and uncomment the corresponding parts in `noise_var.m`, then run `IKG_EstimateVar.m` to see the comparison for
-<img src="https://latex.codecogs.com/svg.latex?{d=1}">
-and
-<img src="https://latex.codecogs.com/svg.latex?{d=3}">.
+just comment and uncomment the corresponding parts in `noise_var.m`, then run `IKG_EstimateVar.m` to see the comparison for <img src="https://latex.codecogs.com/svg.latex?{d=1}"> and <img src="https://latex.codecogs.com/svg.latex?{d=3}">.
 
 ## References
 * Botev, Zdravko (2020). Truncated Normal Generator. *MATLAB Central File Exchange*.
