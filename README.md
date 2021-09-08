@@ -32,11 +32,20 @@ Get into folder `\Main`. Run the first and second sections of script `IKG_Experi
 which is conducted in script `TuneMforBSE.m`,
 and intermediate results are saved in `BSE_regret_reduction.mat`. 
 
-### 3.2 Robustness Test in Shen et al. (2020, §7.2)
-Get into folder `\RobustnessTest`, and run script `RobustnessTest.m`, which is self-explanatory.
+### 3.2 Numerical Experiments in Ding et al. (2021, §5.2)
+Run the third section of script `IKG_Experiments.m` for P3.
 
-### 3.3 Case Study in Shen et al. (2020, §8)
-Get into folder `\EsophagealCancer`.
+### 3.3 Numerical Experiments in Ding et al. (2021, Appendix I)
+Get into folder `\Addtional`.
+* For the **Computational cost comparison** part, get into folder `\Addtional\CompuationCost` and open script `CompareWithSAA.m`, which is self-explanatory. This part involves manually and roughly tuning the sample size in step (i) of method 2, for each
+<img src="https://latex.codecogs.com/svg.latex?{d=1,\ldots,7}">.
+To do that, first fix a value of
+<img src="https://latex.codecogs.com/svg.latex?{d}">,
+then run the first and second sections with different value of `sample_size_ratio`, as explained there.
+To directly check the computation time with our tuned values of `sample_size_ratio`, run the third section of `CompareWithSAA.m` to record the time and run the fourth section to plot.
+Note that different computer configuration may require different time, but the comparison should be similar.
+* 
+* 
 * The script `EsophagealCancerSim.m` is the implementation of a discrete-time Markov chain model that simulates the progression of Barrett’s esophagus (BE) to esophageal
 adenocarcinoma (EAC), which was developed by Hur et al. (2004) and Choi et al. (2014). See more details [here](https://simopt.github.io/ECSim).
 
