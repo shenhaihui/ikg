@@ -1,7 +1,7 @@
-# Source Codes of Ranking and Selection with Covariates
+# Source Codes of Integrated Knowledge Gradient
 
 This repository contains the source codes used in the following paper:
-* Shen, Haihui, L. Jeff Hong, and Xiaowei Zhang (2020). Ranking and selection with covariates for personalized decision making. Submitted to *INFORMS Journal on Computing*.
+* Ding, Liang, L. Jeff Hong, Haihui Shen^∗, Xiaowei Zhang (2021). Technical Note--Knowledge gradient for selection with covariates: Consistency and computation. Accepted in *Naval Research Logistics*.
 
 ### Disclaimer
 LICENSE: Redistribution and use in source and binary forms, with or without modification, are permitted, under the terms of the [BSD license](./BSD_License.txt).
