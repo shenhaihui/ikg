@@ -1,7 +1,7 @@
 # Source Codes of Integrated Knowledge Gradient
 
 This repository contains the source codes used in the following paper:
-* Ding, Liang, L. Jeff Hong, Haihui Shen^∗, Xiaowei Zhang (2021). Technical Note--Knowledge gradient for selection with covariates: Consistency and computation. Accepted in *Naval Research Logistics*.
+* Ding, Liang, L. Jeff Hong, Haihui Shen<sup>*</sup>, Xiaowei Zhang (2021). Technical Note--Knowledge gradient for selection with covariates: Consistency and computation. Accepted in *Naval Research Logistics*.
 
 ### Disclaimer
 LICENSE: Redistribution and use in source and binary forms, with or without modification, are permitted, under the terms of the [BSD license](./BSD_License.txt).
