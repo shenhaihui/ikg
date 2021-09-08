@@ -11,7 +11,7 @@ clarity, generality, and efficiency has not been well considered.
 
 ## 1 Introduction
 The `\IKG2021` folder contains the MATLAB implementations of the numerical experiments in Ding et al. (2021).
-* `\IKG2021\Main`, contains codes for numerical experiments in Ding et al. (2021, §5.1).
+* `\IKG2021\Main`, contains codes for numerical experiments in Ding et al. (2021, §5).
 The codes for the other compared polices are included in the folder `\IKG2021\Main\OtherPolicy`.
 * The function `\IKG2021\Main\trandn.m` is a third-party function from Botev (2020).
 * `\IKG2021\Addtional`, contains codes for numerical experiments in Ding et al. (2021, Appendix I).
@@ -20,19 +20,17 @@ The codes for the other compared polices are included in the folder `\IKG2021\Ma
 The codes were written and run in MATLAB R2018b, on Windows 7 Enterprise 64-bit OS,
 with Intel i9-9900K CPU @ 3.60 GHz, 16 GB RAM.
 
-To install the MATLAB codes, just copy the entire folder `\R&S-C2020` into your MATLAB directory, or change the path of MATLAB to the folder `\R&S-C2020`
+To install the MATLAB codes, just copy the entire folder `\IKG2021` into your MATLAB directory, or change the path of MATLAB to the folder `\IKG2021`
 
-## 3 Details on Numerical Experiments and Case Study
-### 3.1 Numerical Experiments in Shen et al. (2020, §6, EC.6)
-Get into folder `\NumericalExperiments`.
-* To run Procedure TS and TS+ for all the 13 problems with pre-specified target
-<img src="https://latex.codecogs.com/svg.latex?{\text{PCS}_{\text{E}}\geq{1-\alpha}}">, run script `PCSE.m`, which is self-explanatory.
- Scripts `find_h_hom_PCSE.m` and `find_h_hom_PCSE_SA.m` are functions to calculates the constant <img src="https://latex.codecogs.com/svg.latex?{h}"> of Procedure TS for homoscedastic errors, where the the former uses numerical integration (`integral` or `trapz`) and MATLAB built-in root finding function `fzero`, while the latter uses stochastic approximation method.
- Similarly, scripts `find_h_het_PCSE.m` and `find_h_het_PCSE_SA.m` are functions to calculates the constant <img src="https://latex.codecogs.com/svg.latex?{h_{\text{Het}}}"> of Procedure TS+ for heteroscedastic errors.
- 
-* To run Procedure TS and TS+ for all the 13 problems with pre-specified target
-<img src="https://latex.codecogs.com/svg.latex?{\text{PCS}_{\text{min}}\geq{1-\alpha}}">, run script `PCSmin.m`, which is self-explanatory.
- Scripts `find_h_hom_PCSmin.m` and `find_h_het_PCSmin.m` are functions to calculates the constant <img src="https://latex.codecogs.com/svg.latex?{h}"> of Procedure TS and constant <img src="https://latex.codecogs.com/svg.latex?{h_{\text{Het}}}"> of Procedure TS+ , respectively.
+## 3 Details on Numerical Experiments
+### 3.1 Numerical Experiments in Ding et al. (2021, §5.1)
+Get into folder `\Main`. Run the first and second sections of script `IKG_Experiments.m`. 
+* Set parameter `density_type=1` for P1, and set parameter `density_type=2` for P2.
+* The compared policies, *IKGwRC*, *BSE*, *PRS* are implemented in folder `\OtherPolicy`.
+* The BSE policy needs to tune a parameter
+<img src="https://latex.codecogs.com/svg.latex?{M}">,
+which is conducted in script `TuneMforBSE.m`,
+and intermediate results are saved in `BSE_regret_reduction.mat`. 
 
 ### 3.2 Robustness Test in Shen et al. (2020, §7.2)
 Get into folder `\RobustnessTest`, and run script `RobustnessTest.m`, which is self-explanatory.
